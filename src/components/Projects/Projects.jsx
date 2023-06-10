@@ -8,7 +8,7 @@ function Projects() {
 
   useEffect(() => {
     const getProjects = () => {
-      fetch("http://localhost:3000/api/v1/projects")
+      fetch("https://my-portfolio-backend-nine.vercel.app/api/v1/projects")
         .then((response) => response.json())
         .then((response) => setProjects(response.message))
         .catch((err) => console.log(err));
@@ -23,7 +23,7 @@ function Projects() {
         isBlog={false}
         title={project.name}
         description={project.description}
-        ghLink="https://github.com/soumyajit4419/Chatify"
+        ghLink="https://github.com/Code-X-Rahul"
         demoLink={project.url}
       />
     </Col>
