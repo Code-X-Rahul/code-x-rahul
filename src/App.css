@@ -1,5 +1,14 @@
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
 .App {
   text-align: center;
+  min-height: 100vh;
+
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 .App-logo {
@@ -10,6 +19,9 @@
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+  }
+  .loader {
+    animation: App-logo-spin infinite 1s linear;
   }
 }
 

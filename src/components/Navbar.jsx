@@ -23,8 +23,10 @@ function NavBar() {
   function scrollHandler() {
     if (window.scrollY >= 20) {
       updateNavbar(true);
+      // document.querySelector(".App")?.classList.toggle("grid-rows-2");
     } else {
       updateNavbar(false);
+      // document.querySelector(".App")?.classList.toggle("grid-rows-2");
     }
   }
 
