@@ -1,15 +1,12 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import {
   AiFillGithub,
-  AiOutlineYoutube,
   AiFillInstagram,
+  AiOutlineYoutube,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
-  let date = new Date();
-  let year = date.getFullYear();
   return (
     <Container fluid className="footer">
       <Row>
@@ -17,7 +14,7 @@ function Footer() {
           <h3>Designed and Developed by Rahul</h3>
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} CODE-X-RAHUL</h3>
+          <h3>Copyright © 2023 CODE-X-RAHUL</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
@@ -25,7 +22,7 @@ function Footer() {
               <a
                 href="https://github.com/Code-X-Rahul"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiFillGithub />
@@ -35,7 +32,7 @@ function Footer() {
               <a
                 href="https://youtube.com/@CODE-X-RAHUL"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiOutlineYoutube />
@@ -45,7 +42,7 @@ function Footer() {
               <a
                 href="https://www.linkedin.com/in/evileye"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaLinkedinIn />
@@ -55,7 +52,7 @@ function Footer() {
               <a
                 href="https://instagram.com/r_.a._h_.u._l"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiFillInstagram />
